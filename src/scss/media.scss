@@ -1,0 +1,205 @@
+@media screen and (max-width: 1230px) {
+  .about-me__photo {
+    img {
+      width: 400px;
+    }
+  }
+  .content {
+    padding: 0 30px 0 30px;
+  }
+  .postimonials__content {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .footer__bottom {
+    &::before {
+      width: 95%;
+    }
+  }
+  .my-skills__img{
+    img{
+      width: 80%;
+    }
+    
+  }
+}
+@media screen and (max-width: 960px) {
+  .about-me__content-title {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    &::after {
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  .about-me__content-btn {
+    text-align: center;
+  }
+  .about-me__content {
+    justify-self: center;
+    padding-bottom: 50px;
+  }
+  .about-me__photo {
+    justify-self: center;
+  }
+  .postimonials__content-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .title,
+  .about-me__content-title {
+    font-size: 36px;
+    &::after {
+      top: -10px;
+    }
+  }
+  .about-me,
+  .service,
+  .portfolio,
+  .postimonials,
+  .my-skills {
+    padding: 100px 0 100px 0;
+  }
+  .header__img {
+    height: 500px;
+  }
+  .footer__form {
+    width: 500px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-areas:
+      "form-name"
+      "form-email"
+      "form-message"
+      "form-btn";
+  }
+  .footer__form-message {
+    width: 370px;
+  }
+  .footer__form-message,
+  .footer__form-name,
+  .footer__form-email {
+    justify-self: center;
+  }
+  .footer__title {
+    padding-top: 70px;
+  }
+  .postimonials__content-text {
+    width: 300px;
+  }
+  .postimonials__content {
+    padding: 50px 0 80px 0;
+    height: 300px;
+  }
+  .postimonials__slider-box {
+    bottom: 20px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: center;
+    &::before {
+      content: none;
+    }
+  }
+  .footer__bottom-link {
+    position: relative;
+  }
+  .header__nav {
+    li {
+      margin-left: 20px;
+    }
+  }
+  .header__content-title {
+    font-size: 60px;
+    line-height: 40px;
+  }
+  .header__content-subtitle {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .about-me__photo {
+    img {
+      width: 100%;
+    }
+  }
+  .header__logo {
+    position: absolute;
+    top: 30px;
+  }
+  .header__nav {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    li {
+      &:nth-child(1),
+      &:hover {
+        a {
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+    text-align: right;
+    .header__nav li:nth-child(1) {
+      content: none;
+    }
+    ul {
+      flex-direction: column;
+    }
+  }
+  .postimonials__content-title,
+  .postimonials__content-subtitle {
+    text-align: center;
+  }
+  .postimonials__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .postimonials__content-info {
+    margin-left: 10px;
+  }
+  .postimonials__content-text {
+    width: 350px;
+  }
+  .about-me__content-text {
+    width: 380px;
+  }
+  .about-me,
+  .service,
+  .portfolio,
+  .postimonials,
+  .my-skills {
+    padding: 50px 0 50px 0;
+  }
+}
+@media screen and (max-height: 670px) {
+  .header__img {
+    height: 500px;
+  }
+  .footer__title {
+  }
+}
+@media screen and (max-height: 800px){
+  .footer__title {
+    padding-top: 50px;
+  }
+  .footer{
+    .title{
+      &::after{
+        top: 15px;
+      }
+    }
+  }
+  .footer__form{
+    grid-gap: 15px;
+  }
+  .footer__form textarea{
+    height: 150px;
+    
+  }
+}
